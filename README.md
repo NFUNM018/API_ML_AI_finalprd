@@ -39,3 +39,36 @@
 - 场景一：工作了一天回到家的语文老师还有一摞学生的阅读理解要批改。忙完自己的事已经已经夜深，老师打开了app，将学生的文章拍照录入，并将其都录入进手机里。第二天上班的地铁上，老师打开了手机中昨晚录入的学生作业一一查看，并及时记录下了同学们出错最多的题目。
 - 场景二：小明在看书的时候，在书中出现了一句葡萄牙语，小明很想知道这句话是什么意思，他掏出手机却发现自己不会打葡萄牙语。他邪魅一笑，打开了“语法帮app”，选中了拍照功能，将那句葡萄牙语拍了下来，瞬间手机屏幕上就出现了那句话，他点击句子后出现的“翻译”按钮，成功将葡萄牙语翻译成了中文。
 - 场景三：小明工作时需要写大量的文档，他又有一些粗心马虎，常常出现因文档中的语法错误而被扣工资的现象。那天，他打开了语法帮app，将写好的文档上传，app自动为他检测出了文档中的语法错误。
+
+API代码：
+- 图片文字识别：
+
+```
+
+from aip import AipOcr
+import os
+
+
+
+APP_ID = '17993129'
+API_KEY = 'lMedlFKXqiyHgtnQDjY94Mpz'
+SECRET_KEY = 'xxxxxxxxxxx'
+
+client = AipOcr(APP_ID, API_KEY, SECRET_KEY)
+
+
+def get_file_content(filePath):
+    with open(filePath, 'rb') as fp:
+        return fp.read()
+
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))#获取项目根目录
+path = os.path.join(PROJECT_ROOT,"images") #文件路径
+
+for r, ds, fs in os.walk(path):
+     for fn in fs:
+        fname = os.path.join(r, fn)
+        image = get_file_content(fname)
+        ret = client.basicGeneral(image)
+        for item in ret['words_result']:
+            print(item['words'])
+'''
