@@ -61,9 +61,8 @@ def get_file_content(filePath):
     with open(filePath, 'rb') as fp:
         return fp.read()
 
-PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))#获取项目根目录
-path = os.path.join(PROJECT_ROOT,"images") #文件路径
-
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+path = os.path.join(PROJECT_ROOT,"‪D:\test\image.jpg")
 for r, ds, fs in os.walk(path):
      for fn in fs:
         fname = os.path.join(r, fn)
