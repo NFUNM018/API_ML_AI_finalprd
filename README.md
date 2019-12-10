@@ -71,4 +71,19 @@ for r, ds, fs in os.walk(path):
         ret = client.basicGeneral(image)
         for item in ret['words_result']:
             print(item['words'])
-'''
+```
+- 识别结果返回：
+```
+{
+	"log_id": "8581649843797602188",
+	"words_result_num": 2,
+	"words_result": [
+		{
+			"words": "计算机应用基础实验教程"
+		},
+		{
+			"words": "军事理论与军事技能"
+		}
+	]
+}
+```
