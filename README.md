@@ -10,6 +10,25 @@
 # APP原型
 - [APP原型在这里~](http://nfunm018.gitee.io/api_final)
 
+
+- 原型核心功能展示
+![图片1.png](https://upload-images.jianshu.io/upload_images/9467429-426cff775a83dffa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片2.png](https://upload-images.jianshu.io/upload_images/9467429-b8a3f4e647989e9b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片4.png](https://upload-images.jianshu.io/upload_images/9467429-701028211eeb282a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片5.png](https://upload-images.jianshu.io/upload_images/9467429-445fe1a219ce636c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片6.png](https://upload-images.jianshu.io/upload_images/9467429-a140e698c77129bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片7.png](https://upload-images.jianshu.io/upload_images/9467429-0c7046a70e2ad24a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片8.png](https://upload-images.jianshu.io/upload_images/9467429-7233f8129614e2fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+![图片9.png](https://upload-images.jianshu.io/upload_images/9467429-36950457b11b4db4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+
 ## 目的
 让老师不再花费太多精力，让学生更好地写出语句通顺的文章。
 ## 核心价值（最小可行性产品）
